@@ -7,11 +7,11 @@ enum ApplicationStatus {
   REJECTED = "REJECTED",
   GHOSTED = "GHOSTED",
 }
-interface filterType{
-    status?: string|undefined;
-    company?:string|undefined;
-    sort?:string|undefined;
-    order?:string|undefined;
+interface filterType {
+  status?: string | undefined;
+  company?: string | undefined;
+  sort?: string | undefined;
+  order?: string | undefined;
 }
 interface applicationType {
   id: number;

@@ -5,178 +5,313 @@
     "role": "API Architect",
     "jobUrl": "https://nextgen.dev/careers",
     "status": "APPLIED",
-    "appliedAt": "15/6/2026",
-    "LastUpdated": "15/6/2026"
+    "appliedAt": "16/6/2026",
+    "LastUpdated": "16/6/2026"
   },
   {
     "id": 2,
-    "company": "Google",
-    "role": "Backend Engineer",
-    "jobUrl": "https://careers.google.com",
+    "company": "Infosys",
+    "role": "Node.js Developer",
+    "jobUrl": "https://infosys.com/careers",
     "status": "TECHNICAL",
-    "appliedAt": "2/3/2026",
-    "LastUpdated": "10/3/2026"
-  },
-  {
-    "id": 3,
-    "company": "Tech Corp",
-    "role": "Software Engineer II",
-    "jobUrl": "https://techcorp.com/jobs",
-    "status": "REJECTED",
-    "appliedAt": "12/11/2025",
-    "LastUpdated": "20/12/2025"
-  },
-  {
-    "id": 4,
-    "company": "StartupX",
-    "role": "Senior Node.js Developer",
-    "jobUrl": "https://startupx.io/join-us",
-    "status": "OFFER",
-    "appliedAt": "1/5/2026",
-    "LastUpdated": "28/5/2026"
-  },
-  {
-    "id": 5,
-    "company": "Amazon",
-    "role": "Cloud Architect",
-    "jobUrl": "https://amazon.jobs",
-    "status": "PHONE_SCREEN",
-    "appliedAt": "25/5/2026",
+    "appliedAt": "15/5/2026",
     "LastUpdated": "2/6/2026"
   },
   {
-    "id": 6,
-    "company": "NextGen Solutions",
-    "role": "Backend Developer",
-    "jobUrl": "https://nextgen.dev/careers",
-    "status": "GHOSTED",
-    "appliedAt": "10/1/2026",
-    "LastUpdated": "10/2/2026"
+    "id": 3,
+    "company": "Google",
+    "role": "Backend Engineer",
+    "jobUrl": "https://careers.google.com",
+    "status": "PHONE_SCREEN",
+    "appliedAt": "1/6/2026",
+    "LastUpdated": "8/6/2026"
   },
   {
-    "id": 7,
-    "company": "kamlesh gehlot",
+    "id": 4,
+    "company": "Checkpoint Hostel",
     "role": "Fullstack Developer",
-    "jobUrl": "https://job.com",
+    "jobUrl": "https://checkpoint.com/jobs",
+    "status": "OFFER",
+    "appliedAt": "10/4/2026",
+    "LastUpdated": "5/5/2026"
+  },
+  {
+    "id": 5,
+    "company": "Acme Corp",
+    "role": "Junior JS Developer",
+    "jobUrl": "https://acme.io/jobs",
+    "status": "REJECTED",
+    "appliedAt": "2/3/2026",
+    "LastUpdated": "2/3/2026"
+  },
+  {
+    "id": 6,
+    "company": "Tech Innovators",
+    "role": "TypeScript Specialist",
+    "jobUrl": "https://techinnovators.dev",
     "status": "FINAL_ROUND",
-    "appliedAt": "8/6/2026",
+    "appliedAt": "20/5/2026",
     "LastUpdated": "14/6/2026"
   },
   {
-    "id": 8,
-    "company": "CloudSync",
-    "role": "Systems Engineer",
-    "jobUrl": "https://cloudsync.io",
+    "id": 7,
+    "company": "Amazon",
+    "role": "Cloud Architect",
+    "jobUrl": "https://amazon.jobs",
     "status": "APPLIED",
     "appliedAt": "14/6/2026",
     "LastUpdated": "14/6/2026"
   },
   {
-    "id": 9,
-    "company": "DataFlow Inc",
+    "id": 8,
+    "company": "DataFlow",
     "role": "Database Administrator",
     "jobUrl": "https://dataflow.com/careers",
-    "status": "TECHNICAL",
-    "appliedAt": "18/4/2026",
-    "LastUpdated": "5/5/2026"
+    "status": "REJECTED",
+    "appliedAt": "10/1/2026",
+    "LastUpdated": "25/1/2026"
+  },
+  {
+    "id": 9,
+    "company": "Exercism",
+    "role": "Curriculum Engineer",
+    "jobUrl": "https://exercism.org/about/jobs",
+    "status": "OFFER",
+    "appliedAt": "5/2/2026",
+    "LastUpdated": "28/2/2026"
   },
   {
     "id": 10,
-    "company": "Tech Corp",
-    "role": "API Developer",
-    "jobUrl": "https://techcorp.com/jobs",
-    "status": "PHONE_SCREEN",
-    "appliedAt": "1/6/2026",
-    "LastUpdated": "3/6/2026"
+    "company": "Global Systems",
+    "role": "Platform Engineer",
+    "jobUrl": "https://global.sys",
+    "status": "GHOSTED",
+    "appliedAt": "15/11/2025",
+    "LastUpdated": "15/1/2026"
   },
   {
     "id": 11,
-    "company": "InnovateTech",
-    "role": "Junior Developer",
-    "jobUrl": "https://innovatetech.com/jobs",
-    "status": "REJECTED",
-    "appliedAt": "5/2/2025",
-    "LastUpdated": "15/2/2025"
+    "company": "StartupX",
+    "role": "Senior Node.js Developer",
+    "jobUrl": "https://startupx.io/join-us",
+    "status": "TECHNICAL",
+    "appliedAt": "25/5/2026",
+    "LastUpdated": "10/6/2026"
   },
   {
     "id": 12,
-    "company": "Google",
-    "role": "Site Reliability Engineer",
-    "jobUrl": "https://careers.google.com",
+    "company": "MegaCorp",
+    "role": "Software Engineer II",
+    "jobUrl": "https://megacorp.com",
     "status": "GHOSTED",
-    "appliedAt": "20/8/2025",
-    "LastUpdated": "20/10/2025"
+    "appliedAt": "1/8/2025",
+    "LastUpdated": "1/11/2025"
   },
   {
     "id": 13,
-    "company": "GlobalSystems",
-    "role": "Platform Engineer",
-    "jobUrl": "https://globalsystems.enterprise",
+    "company": "Amazon",
+    "role": "Software Development Engineer",
+    "jobUrl": "https://amazon.jobs",
+    "status": "PHONE_SCREEN",
+    "appliedAt": "2/6/2026",
+    "LastUpdated": "6/6/2026"
+  },
+  {
+    "id": 14,
+    "company": "NextGen Solutions",
+    "role": "Backend Intern",
+    "jobUrl": "https://nextgen.dev/careers",
+    "status": "REJECTED",
+    "appliedAt": "10/5/2026",
+    "LastUpdated": "20/5/2026"
+  },
+  {
+    "id": 15,
+    "company": "CloudSync",
+    "role": "Systems Engineer",
+    "jobUrl": "https://cloudsync.io",
+    "status": "FINAL_ROUND",
+    "appliedAt": "15/4/2026",
+    "LastUpdated": "12/6/2026"
+  },
+  {
+    "id": 16,
+    "company": "Varanasi Tech",
+    "role": "Frontend Developer",
+    "jobUrl": "https://vtech.in",
     "status": "APPLIED",
     "appliedAt": "12/6/2026",
     "LastUpdated": "12/6/2026"
   },
   {
-    "id": 14,
-    "company": "StartupX",
-    "role": "Lead Engineer",
-    "jobUrl": "https://startupx.io/join-us",
-    "status": "FINAL_ROUND",
-    "appliedAt": "15/4/2026",
-    "LastUpdated": "10/6/2026"
+    "id": 17,
+    "company": "Google",
+    "role": "Site Reliability Engineer",
+    "jobUrl": "https://careers.google.com",
+    "status": "GHOSTED",
+    "appliedAt": "10/12/2025",
+    "LastUpdated": "10/2/2026"
   },
   {
-    "id": 15,
+    "id": 18,
+    "company": "FastTech",
+    "role": "API Developer",
+    "jobUrl": "https://fasttech.io",
+    "status": "REJECTED",
+    "appliedAt": "16/6/2026",
+    "LastUpdated": "16/6/2026"
+  },
+  {
+    "id": 19,
+    "company": "Innovate",
+    "role": "Junior Developer",
+    "jobUrl": "https://innovate.com/jobs",
+    "status": "PHONE_SCREEN",
+    "appliedAt": "8/6/2026",
+    "LastUpdated": "15/6/2026"
+  },
+  {
+    "id": 20,
     "company": "Streamline",
-    "role": "Backend Intern",
+    "role": "Backend Lead",
     "jobUrl": "https://streamline.co",
-    "status": "OFFER",
-    "appliedAt": "1/12/2025",
-    "LastUpdated": "20/12/2025"
+    "status": "TECHNICAL",
+    "appliedAt": "20/5/2026",
+    "LastUpdated": "5/6/2026"
   },
   {
-    "id": 16,
-    "company": "Amazon",
-    "role": "Software Development Engineer",
-    "jobUrl": "https://amazon.jobs",
+    "id": 21,
+    "company": "Agile Start",
+    "role": "Fullstack Engineer",
+    "jobUrl": "https://agile.co",
+    "status": "OFFER",
+    "appliedAt": "1/3/2026",
+    "LastUpdated": "10/3/2026"
+  },
+  {
+    "id": 22,
+    "company": "Meta",
+    "role": "UI/UX Developer",
+    "jobUrl": "https://meta.com/careers",
     "status": "APPLIED",
     "appliedAt": "15/6/2026",
     "LastUpdated": "15/6/2026"
   },
   {
-    "id": 17,
-    "company": "kamlesh gehlot",
-    "role": "API Architect",
-    "jobUrl": "https://job.com",
-    "status": "TECHNICAL",
-    "appliedAt": "30/5/2026",
-    "LastUpdated": "12/6/2026"
+    "id": 23,
+    "company": "CodeCrafters",
+    "role": "Node.js Architect",
+    "jobUrl": "https://codecrafters.io",
+    "status": "FINAL_ROUND",
+    "appliedAt": "1/5/2026",
+    "LastUpdated": "10/6/2026"
   },
   {
-    "id": 18,
-    "company": "DataFlow Inc",
+    "id": 24,
+    "company": "DataFlow",
     "role": "Data Engineer",
     "jobUrl": "https://dataflow.com/careers",
     "status": "REJECTED",
     "appliedAt": "14/2/2026",
-    "LastUpdated": "28/2/2026"
+    "LastUpdated": "1/3/2026"
   },
   {
-    "id": 19,
-    "company": "InnovateTech",
+    "id": 25,
+    "company": "FinTech Pros",
     "role": "Security Engineer",
-    "jobUrl": "https://innovatetech.com/jobs",
-    "status": "PHONE_SCREEN",
-    "appliedAt": "11/6/2026",
-    "LastUpdated": "13/6/2026"
+    "jobUrl": "https://fintechpros.com",
+    "status": "GHOSTED",
+    "appliedAt": "5/1/2026",
+    "LastUpdated": "5/4/2026"
   },
   {
-    "id": 20,
-    "company": "CloudSync",
-    "role": "Backend Lead",
-    "jobUrl": "https://cloudsync.io",
-    "status": "APPLIED",
+    "id": 26,
+    "company": "HealthTech",
+    "role": "API Developer",
+    "jobUrl": "https://healthtech.io",
+    "status": "TECHNICAL",
     "appliedAt": "10/6/2026",
-    "LastUpdated": "10/6/2026"
+    "LastUpdated": "15/6/2026"
+  },
+  {
+    "id": 27,
+    "company": "Logistics Hub",
+    "role": "Software Engineer I",
+    "jobUrl": "https://logistics.hub",
+    "status": "OFFER",
+    "appliedAt": "10/11/2025",
+    "LastUpdated": "1/12/2025"
+  },
+  {
+    "id": 28,
+    "company": "EdTech Solutions",
+    "role": "React Developer",
+    "jobUrl": "https://edtech.dev",
+    "status": "PHONE_SCREEN",
+    "appliedAt": "5/6/2026",
+    "LastUpdated": "12/6/2026"
+  },
+  {
+    "id": 29,
+    "company": "CyberSec",
+    "role": "Penetration Tester",
+    "jobUrl": "https://cybersec.com",
+    "status": "REJECTED",
+    "appliedAt": "1/4/2026",
+    "LastUpdated": "15/4/2026"
+  },
+  {
+    "id": 30,
+    "company": "AI Dynamics",
+    "role": "Machine Learning Engineer",
+    "jobUrl": "https://aidynamics.ai",
+    "status": "APPLIED",
+    "appliedAt": "16/6/2026",
+    "LastUpdated": "16/6/2026"
+  },
+  {
+    "id": 31,
+    "company": "WebShop",
+    "role": "E-commerce Developer",
+    "jobUrl": "https://webshop.io",
+    "status": "FINAL_ROUND",
+    "appliedAt": "25/4/2026",
+    "LastUpdated": "5/6/2026"
+  },
+  {
+    "id": 32,
+    "company": "GameStudio",
+    "role": "Backend Multiplayer Engineer",
+    "jobUrl": "https://gamestudio.dev",
+    "status": "GHOSTED",
+    "appliedAt": "20/2/2026",
+    "LastUpdated": "20/4/2026"
+  },
+  {
+    "id": 33,
+    "company": "NextGen Solutions",
+    "role": "Lead Architect",
+    "jobUrl": "https://nextgen.dev/careers",
+    "status": "OFFER",
+    "appliedAt": "1/5/2026",
+    "LastUpdated": "25/5/2026"
+  },
+  {
+    "id": 34,
+    "company": "StartupX",
+    "role": "QA Engineer",
+    "jobUrl": "https://startupx.io/join-us",
+    "status": "REJECTED",
+    "appliedAt": "10/3/2026",
+    "LastUpdated": "18/3/2026"
+  },
+  {
+    "id": 35,
+    "company": "CloudSync",
+    "role": "DevOps Engineer",
+    "jobUrl": "https://cloudsync.io",
+    "status": "TECHNICAL",
+    "appliedAt": "1/6/2026",
+    "LastUpdated": "14/6/2026"
   }
 ]
