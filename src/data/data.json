@@ -1,1 +1,182 @@
-[]
+[
+  {
+    "id": 1,
+    "company": "NextGen Solutions",
+    "role": "API Architect",
+    "jobUrl": "https://nextgen.dev/careers",
+    "status": "APPLIED",
+    "appliedAt": "15/6/2026",
+    "LastUpdated": "15/6/2026"
+  },
+  {
+    "id": 2,
+    "company": "Google",
+    "role": "Backend Engineer",
+    "jobUrl": "https://careers.google.com",
+    "status": "TECHNICAL",
+    "appliedAt": "2/3/2026",
+    "LastUpdated": "10/3/2026"
+  },
+  {
+    "id": 3,
+    "company": "Tech Corp",
+    "role": "Software Engineer II",
+    "jobUrl": "https://techcorp.com/jobs",
+    "status": "REJECTED",
+    "appliedAt": "12/11/2025",
+    "LastUpdated": "20/12/2025"
+  },
+  {
+    "id": 4,
+    "company": "StartupX",
+    "role": "Senior Node.js Developer",
+    "jobUrl": "https://startupx.io/join-us",
+    "status": "OFFER",
+    "appliedAt": "1/5/2026",
+    "LastUpdated": "28/5/2026"
+  },
+  {
+    "id": 5,
+    "company": "Amazon",
+    "role": "Cloud Architect",
+    "jobUrl": "https://amazon.jobs",
+    "status": "PHONE_SCREEN",
+    "appliedAt": "25/5/2026",
+    "LastUpdated": "2/6/2026"
+  },
+  {
+    "id": 6,
+    "company": "NextGen Solutions",
+    "role": "Backend Developer",
+    "jobUrl": "https://nextgen.dev/careers",
+    "status": "GHOSTED",
+    "appliedAt": "10/1/2026",
+    "LastUpdated": "10/2/2026"
+  },
+  {
+    "id": 7,
+    "company": "kamlesh gehlot",
+    "role": "Fullstack Developer",
+    "jobUrl": "https://job.com",
+    "status": "FINAL_ROUND",
+    "appliedAt": "8/6/2026",
+    "LastUpdated": "14/6/2026"
+  },
+  {
+    "id": 8,
+    "company": "CloudSync",
+    "role": "Systems Engineer",
+    "jobUrl": "https://cloudsync.io",
+    "status": "APPLIED",
+    "appliedAt": "14/6/2026",
+    "LastUpdated": "14/6/2026"
+  },
+  {
+    "id": 9,
+    "company": "DataFlow Inc",
+    "role": "Database Administrator",
+    "jobUrl": "https://dataflow.com/careers",
+    "status": "TECHNICAL",
+    "appliedAt": "18/4/2026",
+    "LastUpdated": "5/5/2026"
+  },
+  {
+    "id": 10,
+    "company": "Tech Corp",
+    "role": "API Developer",
+    "jobUrl": "https://techcorp.com/jobs",
+    "status": "PHONE_SCREEN",
+    "appliedAt": "1/6/2026",
+    "LastUpdated": "3/6/2026"
+  },
+  {
+    "id": 11,
+    "company": "InnovateTech",
+    "role": "Junior Developer",
+    "jobUrl": "https://innovatetech.com/jobs",
+    "status": "REJECTED",
+    "appliedAt": "5/2/2025",
+    "LastUpdated": "15/2/2025"
+  },
+  {
+    "id": 12,
+    "company": "Google",
+    "role": "Site Reliability Engineer",
+    "jobUrl": "https://careers.google.com",
+    "status": "GHOSTED",
+    "appliedAt": "20/8/2025",
+    "LastUpdated": "20/10/2025"
+  },
+  {
+    "id": 13,
+    "company": "GlobalSystems",
+    "role": "Platform Engineer",
+    "jobUrl": "https://globalsystems.enterprise",
+    "status": "APPLIED",
+    "appliedAt": "12/6/2026",
+    "LastUpdated": "12/6/2026"
+  },
+  {
+    "id": 14,
+    "company": "StartupX",
+    "role": "Lead Engineer",
+    "jobUrl": "https://startupx.io/join-us",
+    "status": "FINAL_ROUND",
+    "appliedAt": "15/4/2026",
+    "LastUpdated": "10/6/2026"
+  },
+  {
+    "id": 15,
+    "company": "Streamline",
+    "role": "Backend Intern",
+    "jobUrl": "https://streamline.co",
+    "status": "OFFER",
+    "appliedAt": "1/12/2025",
+    "LastUpdated": "20/12/2025"
+  },
+  {
+    "id": 16,
+    "company": "Amazon",
+    "role": "Software Development Engineer",
+    "jobUrl": "https://amazon.jobs",
+    "status": "APPLIED",
+    "appliedAt": "15/6/2026",
+    "LastUpdated": "15/6/2026"
+  },
+  {
+    "id": 17,
+    "company": "kamlesh gehlot",
+    "role": "API Architect",
+    "jobUrl": "https://job.com",
+    "status": "TECHNICAL",
+    "appliedAt": "30/5/2026",
+    "LastUpdated": "12/6/2026"
+  },
+  {
+    "id": 18,
+    "company": "DataFlow Inc",
+    "role": "Data Engineer",
+    "jobUrl": "https://dataflow.com/careers",
+    "status": "REJECTED",
+    "appliedAt": "14/2/2026",
+    "LastUpdated": "28/2/2026"
+  },
+  {
+    "id": 19,
+    "company": "InnovateTech",
+    "role": "Security Engineer",
+    "jobUrl": "https://innovatetech.com/jobs",
+    "status": "PHONE_SCREEN",
+    "appliedAt": "11/6/2026",
+    "LastUpdated": "13/6/2026"
+  },
+  {
+    "id": 20,
+    "company": "CloudSync",
+    "role": "Backend Lead",
+    "jobUrl": "https://cloudsync.io",
+    "status": "APPLIED",
+    "appliedAt": "10/6/2026",
+    "LastUpdated": "10/6/2026"
+  }
+]

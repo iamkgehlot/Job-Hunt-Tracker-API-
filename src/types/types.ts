@@ -7,7 +7,12 @@ enum ApplicationStatus {
   REJECTED = "REJECTED",
   GHOSTED = "GHOSTED",
 }
-
+interface filterType{
+    status?: string|undefined;
+    company?:string|undefined;
+    sort?:string|undefined;
+    order?:string|undefined;
+}
 interface applicationType {
   id: number;
   company: string;
@@ -17,4 +22,4 @@ interface applicationType {
   appliedAt: string;
   LastUpdated: string;
 }
-export { ApplicationStatus, type applicationType };
+export { ApplicationStatus, type applicationType, type filterType };
