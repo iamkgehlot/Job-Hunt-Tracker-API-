@@ -1,4 +1,5 @@
 import type { Response, Request, NextFunction } from "express";
+import { success } from "zod";
 
 export const ErrorHandler = (
   err: any,
@@ -7,7 +8,9 @@ export const ErrorHandler = (
   next: NextFunction,
 ) => {
   return res.status(err.statusCode).json({
-    error: err.message,
+    success:false,
     errorCode: err.statusCode,
+    error: err.message,
+    
   });
 };

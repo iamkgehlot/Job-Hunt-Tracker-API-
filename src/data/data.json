@@ -9,24 +9,6 @@
     "LastUpdated": "16/6/2026"
   },
   {
-    "id": 2,
-    "company": "Infosys",
-    "role": "Node.js Developer",
-    "jobUrl": "https://infosys.com/careers",
-    "status": "TECHNICAL",
-    "appliedAt": "15/5/2026",
-    "LastUpdated": "2/6/2026"
-  },
-  {
-    "id": 3,
-    "company": "Google",
-    "role": "Backend Engineer",
-    "jobUrl": "https://careers.google.com",
-    "status": "PHONE_SCREEN",
-    "appliedAt": "1/6/2026",
-    "LastUpdated": "8/6/2026"
-  },
-  {
     "id": 4,
     "company": "Checkpoint Hostel",
     "role": "Fullstack Developer",
@@ -313,5 +295,50 @@
     "status": "TECHNICAL",
     "appliedAt": "1/6/2026",
     "LastUpdated": "14/6/2026"
+  },
+  {
+    "id": 36,
+    "company": "Cognizant Solutions",
+    "role": "Node Js Developer",
+    "jobUrl": "https://cognizant.dev/careers",
+    "status": "APPLIED",
+    "appliedAt": "16/6/2026",
+    "LastUpdated": "16/6/2026"
+  },
+  {
+    "id": 37,
+    "company": "Cognizant Solutions",
+    "role": "Node Js Developer",
+    "jobUrl": "https://cognizant.dev/careers",
+    "status": "APPLIED",
+    "appliedAt": "16/6/2026",
+    "LastUpdated": "16/6/2026"
+  },
+  {
+    "id": 38,
+    "company": "Cognizant Solutions",
+    "role": "Node Js Developer",
+    "jobUrl": "https://cognizant.dev/careers",
+    "status": "APPLIED",
+    "appliedAt": "16/6/2026",
+    "LastUpdated": "16/6/2026"
+  },
+  {
+    "id": 39,
+    "company": "Cognizant Solutions",
+    "role": "Node Js Developer",
+    "jobUrl": "https://cognizant.dev/careers",
+    "status": "APPLIED",
+    "appliedAt": "16/6/2026",
+    "LastUpdated": "16/6/2026"
+  },
+  {
+    "id": 40,
+    "company": "Cognizant Solutions",
+    "role": "Node Js Developer",
+    "jobUrl": "https://cognizant.dev/careers",
+    "status": "APPLIED",
+    "appliedAt": "16/6/2026",
+    "LastUpdated": "16/6/2026"
   }
 ]

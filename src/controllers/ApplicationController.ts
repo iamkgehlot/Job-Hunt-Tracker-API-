@@ -12,17 +12,16 @@ import { AppError } from "../utils/AppError.js";
 const createJob = async (req: Request, res: Response) => {
   const newJob = req.body;
   await postJobService(newJob);
-  return res.status(200).json("job posted");
+  return res.status(200).json({success:true,message:"job posted"});
 };
 
 const getJob = async (req: Request, res: Response, next: NextFunction) => {
   const id = parseInt(req.params.id as string, 10);
   const job = await getJobByIdService(id);
-  console.log(job);
   if (job === null) {
-    return next(new AppError(404, "Job application not found"));
+    return next(new AppError(400, "Job application not found"));
   }
-  return res.status(200).json(job);
+  return res.status(200).json({success:true,data:job});
 };
 
 const getAllJob = async (req: Request, res: Response, next: NextFunction) => {
@@ -34,9 +33,9 @@ const getAllJob = async (req: Request, res: Response, next: NextFunction) => {
   });
 
   if (allJobs.length === 0) {
-    return next(new AppError(404, "No job Application available"));
+    return next(new AppError(400, "No job Application available"));
   }
-  return res.status(200).json(allJobs);
+  return res.status(200).json({success:true,data:allJobs});
 };
 
 const patchJob = async (req: Request, res: Response, next: NextFunction) => {
@@ -44,26 +43,26 @@ const patchJob = async (req: Request, res: Response, next: NextFunction) => {
   const data = req.body;
   const patchRes = await patchJobService(id, data);
   if (patchRes === null) {
-    return next(new AppError(404, "no job found with given id"));
+    return next(new AppError(400, "no job found with given id"));
   }
-  return res.status(200).json(patchRes);
+  return res.status(200).json({success:true,data:patchRes});
 };
 
 const deleteById = async (req: Request, res: Response, next: NextFunction) => {
   const id = parseInt(req.params.id as string, 10);
   const deleteRes = await deleteByIdService(id);
   if (deleteRes === null) {
-    return next(new AppError(404, "no job found with given id"));
+    return next(new AppError(400, "no job found with given id"));
   }
-  return res.status(200).json(deleteRes);
+  return res.status(200).json({success:true,data:deleteRes});
 };
 
 const getStats = async (req: Request, res: Response, next: NextFunction) => {
   const stats = await statsService();
   if(stats===null){
-    return new AppError(404, "no data available to calculate stats")
+    return new AppError(400, "no data available to calculate stats")
   }
-  return res.status(200).json(stats);
+  return res.status(200).json({success:true,data:stats});
 };
 
 export { getAllJob, patchJob, deleteById, getJob, createJob, getStats };
