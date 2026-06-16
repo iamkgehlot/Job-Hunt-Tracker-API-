@@ -1,5 +1,5 @@
 import type { Response, Request, NextFunction } from "express";
-import { success } from "zod";
+
 
 export const ErrorHandler = (
   err: any,
@@ -7,10 +7,10 @@ export const ErrorHandler = (
   res: Response,
   next: NextFunction,
 ) => {
-  return res.status(err.statusCode).json({
+  return res.status(err.statusCode||500).json({
     success:false,
-    errorCode: err.statusCode,
-    error: err.message,
+    errorCode: err.statusCode||500,
+    error: err.message||"internal server error",
     
   });
 };

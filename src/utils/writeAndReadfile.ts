@@ -16,7 +16,7 @@ const readFile = async () => {
     }
     return JSON.parse(data); //converts raw data into readable array
   } catch (error) {
-    throw new AppError(404, "no data avaialble in database");
+    throw new AppError(500, "data file could not be found");
   }
 };
 
@@ -24,7 +24,7 @@ const writeFile = async (data: applicationType[]) => {
   try {
     await fs.writeFile(filepath, JSON.stringify(data, null, 2)); //adds line break and two space indendation
   } catch (error) {
-    throw new Error("something went wrong while writing data");
+    throw new AppError(500,"something went wrong while writing data");
   }
 };
 export { readFile, writeFile };
