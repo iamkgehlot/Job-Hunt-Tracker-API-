@@ -1,4 +1,10 @@
 # Job Hunt Tracker API 🚀
+<div align="center">
+  <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" alt="Express.js" />
+  <img src="https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white" alt="Render" />
+</div>
 
 A robust, TypeScript-based RESTful API designed to manage and track the lifecycle of job applications. Built with Express.js, this API features a complete CRUD workflow, advanced data aggregation, strictly typed validations, and robust security middleware.
 
