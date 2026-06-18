@@ -5,6 +5,9 @@
   <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" alt="Express.js" />
   <img src="https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white" alt="Render" />
 </div>
+**🟢 Live API URL:** [https://your-render-url.onrender.com](https://your-render-url.onrender.com)
+
+> **Note:** This API is hosted on a free Render instance. If it hasn't been used in 15 minutes, the server goes to sleep. **The very first request might take 50 seconds to respond** while the server wakes up. Subsequent requests will be blazing fast!
 
 A robust, TypeScript-based RESTful API designed to manage and track the lifecycle of job applications. Built with Express.js, this API features a complete CRUD workflow, advanced data aggregation, strictly typed validations, and robust security middleware.
 
