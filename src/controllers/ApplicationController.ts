@@ -21,7 +21,7 @@ const getJob = catchAsync(
     const id = parseInt(req.params.id as string, 10);
     const job = await getJobByIdService(id);
     if (job === null) {
-      return next(new AppError(400, "Job application not found"));
+      return next(new AppError(404, "Job application not found"));
     }
     return res.status(200).json({ success: true, data: job });
   },
@@ -51,7 +51,7 @@ const patchJob = catchAsync(
     const data = req.body;
     const patchRes = await patchJobService(id, data);
     if (patchRes === null) {
-      return next(new AppError(400, "no job found with given id"));
+      return next(new AppError(404, "no job found with given id"));
     }
     return res.status(200).json({ success: true, data: patchRes });
   },
@@ -62,7 +62,7 @@ const deleteById = catchAsync(
     const id = parseInt(req.params.id as string, 10);
     const deleteRes = await deleteByIdService(id);
     if (deleteRes === null) {
-      return next(new AppError(400, "no job found with given id"));
+      return next(new AppError(404, "no job found with given id"));
     }
     return res.status(200).json({ success: true, data: deleteRes });
   },
