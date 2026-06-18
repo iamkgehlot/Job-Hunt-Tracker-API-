@@ -30,6 +30,15 @@ A robust, TypeScript-based RESTful API designed to manage and track the lifecycl
 
 ---
 
+## Visual Demonstrations 🎥
+*See the API in action below:*
+
+| Basic CRUD | Filtering & Sorting | Zod Validation |
+| :--- | :--- | :--- |
+| ![CRUD](assets/getpostget.gif) | ![Filters](assets/filters.gif) | ![Validation](assets/zod.gif) |
+
+---
+
 ## API Endpoints
 
 Base URL: `/api/v1/jobs`
