@@ -9,6 +9,7 @@ import {
 } from "../services/ApplicationServices.js";
 import { AppError } from "../utils/AppError.js";
 import { catchAsync } from "../utils/catchAsync.js";
+import { is } from "zod/v4/locales";
 
 const createJob = catchAsync(async (req: Request, res: Response) => {
   const newJob = req.body;
@@ -29,17 +30,31 @@ const getJob = catchAsync(
 
 const getAllJob = catchAsync(
   async (req: Request, res: Response, next: NextFunction) => {
-    const allJobs = await getAlljobService({
+    const filters = {
       status: req.query.status as string | undefined,
       company: req.query.company as string | undefined,
       sort: req.query.sort as string | undefined,
       order: req.query.order as string | undefined,
-    });
+    };
+    const allJobs = await getAlljobService(filters);
+
+    const isFiltering = !!(
+      filters.status ||
+      filters.company ||
+      filters.sort ||
+      filters.order
+    );
 
     if (allJobs.length === 0) {
       return res
         .status(200)
-        .json({ success: true, data: [], message: "no jobs are posted yet" });
+        .json({
+          success: true,
+          data: [],
+          message: isFiltering
+            ? "no jobs matched for given filters"
+            : "no jobs are posted yet",
+        });
     }
     return res.status(200).json({ success: true, data: allJobs });
   },

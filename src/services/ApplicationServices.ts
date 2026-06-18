@@ -51,6 +51,7 @@ const getAlljobService = async (filterdata?: filterType) => {
         filterdata.company && filterdata.company.trim() !== ""
           ? data.company.toLowerCase() === filterdata.company?.toLowerCase()
           : true;
+
       return statusMatch && companyMatch;
     });
   }
@@ -99,7 +100,7 @@ const patchJobService = async (id: number, data: applicationType) => {
     return null;
   }
   if (data.jobUrl) findJob.jobUrl = data.jobUrl;
-  if (data.appliedAt) findJob.appliedAt = findJob.appliedAt;
+  findJob.appliedAt = findJob.appliedAt;
   if (data.company) findJob.company = data.company;
   findJob.LastUpdated = new Date().toLocaleDateString();
   if (data.role) findJob.role = data.role;
