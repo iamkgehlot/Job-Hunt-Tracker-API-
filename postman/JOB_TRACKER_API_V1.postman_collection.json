@@ -381,7 +381,7 @@
         "method": "DELETE",
         "header": [],
         "url": {
-          "raw": "{{baseurl}}/api/v1/jobs/14",
+          "raw": "{{baseurl}}/api/v1/jobs/1",
           "host": [
             "{{baseurl}}"
           ],
@@ -389,7 +389,7 @@
             "api",
             "v1",
             "jobs",
-            "14"
+            "1"
           ]
         }
       },
