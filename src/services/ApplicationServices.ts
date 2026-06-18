@@ -173,6 +173,7 @@ const statsService = async () => {
     newStats._responseCounter > 0
       ? Math.round(newStats._totalResponseDays / newStats._responseCounter)
       : null;
+
   const { _totalResponseDays, _responseCounter, ...finalstats } = newStats;
   return finalstats;
 };

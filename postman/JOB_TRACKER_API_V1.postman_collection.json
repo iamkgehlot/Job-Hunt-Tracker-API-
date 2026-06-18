@@ -1,0 +1,473 @@
+{
+  "info": {
+    "_postman_id": "94a6a96c-c3bf-414a-8e9a-4715985c32cf",
+    "name": "JOB_TRACKER_API_V1",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "38017618"
+  },
+  "item": [
+    {
+      "name": "get all jobs",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "\r",
+              "const jsonBody = pm.response.json();\r",
+              "const jobSchema = {\r",
+              "    \"type\": \"object\",\r",
+              "    \"properties\": {\r",
+              "        \"success\": { \"type\": \"boolean\" },\r",
+              "        \"data\": {\r",
+              "            \"type\": \"array\",\r",
+              "            \"items\": {\r",
+              "                \"type\": \"object\",\r",
+              "                \"properties\": {\r",
+              "                    \"id\": { \"type\": \"number\" },\r",
+              "                    \"company\": { \"type\": \"string\" },\r",
+              "                    \"role\": { \"type\": \"string\" },\r",
+              "                    \"jobUrl\": { \"type\": \"string\" },\r",
+              "                    \"status\": { \"type\": \"string\" },\r",
+              "                    \"appliedAt\": { \"type\": \"string\" },\r",
+              "                    \"LastUpdated\": { \"type\": \"string\" }\r",
+              "                },\r",
+              "                \"required\": [\"id\", \"company\", \"role\", \"jobUrl\", \"status\", \"appliedAt\", \"LastUpdated\"]\r",
+              "\r",
+              "            },\r",
+              "\r",
+              "        }\r",
+              "    },\r",
+              "    \"required\": [\"success\", \"data\"]\r",
+              "}\r",
+              "pm.test(\"get job by id\", function () {\r",
+              "    pm.response.to.have.jsonSchema(jobSchema);\r",
+              "})"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseurl}}/api/v1/jobs/",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "jobs",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get job by id",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "\r",
+              "const jsonBody = pm.response.json();\r",
+              "const jobSchema = {\r",
+              "    \"type\": \"object\",\r",
+              "    \"properties\": {\r",
+              "        \"success\": {\"type\":\"boolean\"},\r",
+              "        \"data\": {\r",
+              "            \"type\": \"object\",\r",
+              "            \"properties\": {\r",
+              "                \"id\": { \"type\": \"number\" },\r",
+              "                \"company\": { \"type\": \"string\" },\r",
+              "                \"role\": { \"type\": \"string\" },\r",
+              "                \"jobUrl\": { \"type\": \"string\" },\r",
+              "                \"status\": { \"type\": \"string\" },\r",
+              "                \"appliedAt\": { \"type\": \"string\" },\r",
+              "                \"LastUpdated\": { \"type\": \"string\" }\r",
+              "\r",
+              "            },\r",
+              "            \"required\": [\"id\", \"company\", \"role\", \"jobUrl\", \"status\", \"appliedAt\", \"LastUpdated\"]\r",
+              "        }\r",
+              "    },\r",
+              "    \"required\": [\"success\", \"data\"]\r",
+              "}\r",
+              "pm.test(\"get job by id\" ,function(){\r",
+              "    pm.response.to.have.jsonSchema(jobSchema);\r",
+              "})"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseurl}}/api/v1/jobs/1",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "jobs",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "filter and sort",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "\r",
+              "const jsonBody = pm.response.json();\r",
+              "const jobSchema = {\r",
+              "    \"type\": \"object\",\r",
+              "    \"properties\": {\r",
+              "        \"success\": { \"type\": \"boolean\" },\r",
+              "        \"data\": {\r",
+              "            \"type\": \"array\",\r",
+              "            \"items\": {\r",
+              "                \"type\": \"object\",\r",
+              "                \"properties\": {\r",
+              "                    \"id\": { \"type\": \"number\" },\r",
+              "                    \"company\": { \"type\": \"string\" },\r",
+              "                    \"role\": { \"type\": \"string\" },\r",
+              "                    \"jobUrl\": { \"type\": \"string\" },\r",
+              "                    \"status\": { \"type\": \"string\" },\r",
+              "                    \"appliedAt\": { \"type\": \"string\" },\r",
+              "                    \"LastUpdated\": { \"type\": \"string\" }\r",
+              "                },\r",
+              "                \"required\": [\"id\", \"company\", \"role\", \"jobUrl\", \"status\", \"appliedAt\", \"LastUpdated\"]\r",
+              "\r",
+              "            },\r",
+              "\r",
+              "        }\r",
+              "    },\r",
+              "    \"required\": [\"success\", \"data\"]\r",
+              "}\r",
+              "pm.test(\"get job by id\", function () {\r",
+              "    pm.response.to.have.jsonSchema(jobSchema);\r",
+              "})"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseurl}}/api/v1/jobs?status=applied&sort=role&order=asc",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "jobs"
+          ],
+          "query": [
+            {
+              "key": "status",
+              "value": "applied"
+            },
+            {
+              "key": "sort",
+              "value": "role"
+            },
+            {
+              "key": "order",
+              "value": "asc"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "post job application",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const jsonBody = {\r",
+              "    \"type\": \"object\",\r",
+              "    \"properties\": {\r",
+              "        \"success\": { \"type\": \"boolean\", \"const\": true },\r",
+              "        \"message\": { \"type\": \"string\", \"const\": \"job posted\" }\r",
+              "    },\r",
+              "    \"required\": [\"success\", \"message\"]\r",
+              "}\r",
+              "\r",
+              "pm.test(\"job postede\", function () {\r",
+              "    pm.response.to.have.jsonSchema(jsonBody);\r",
+              "})"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              "const uniqueRole = \"backend dev \" + Date.now();\r",
+              "\r",
+              "pm.collectionVariables.set(\"dynamicRole\", uniqueRole);\r",
+              "\r",
+              "console.log(\"dynimice role applied:\", uniqueRole);"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n        \r\n        \"company\": \"Cognizant Solutions\",\r\n        \"role\": \"{{dynamicRole}}\",\r\n        \"jobUrl\": \"https://cognizant.dev/careers\",\r\n        \"status\": \"APPLIED\"\r\n    \r\n    }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseurl}}/api/v1/jobs",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "jobs"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "patch job",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const idParam=pm.request.url.query.get(\"id\");\r",
+              "const jsonBody={\r",
+              "    \"type\":\"object\",\r",
+              "    \"properties\":{\r",
+              "        \"success\":{\"type\":\"boolean\" ,\"const\":true},\r",
+              "        \"data\":{\r",
+              "            \"type\":\"object\",\r",
+              "            \"properties\":{\r",
+              "                \"id\":{\"type\":\"number\",\"const\":idParam},\r",
+              "            },\r",
+              "            \"required\":[\"id\",\"company\",\"role\",\"status\",\"appliedAt\",\"LastUpdated\"]\r",
+              "        }\r",
+              "    },\r",
+              "    \"required\":[\"success\",\"data\"],\r",
+              "}\r",
+              "\r",
+              "pm.test(\"get job by id \", function(){\r",
+              "    pm.response.to.have.jsonSchema(jsonBody);\r",
+              "})\r",
+              "   "
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{   \r\n    \"company\": \"google dev\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseurl}}/api/v1/jobs/4",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "jobs",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const jsonBody={\r",
+              "    \"type\":\"object\",\r",
+              "    \"properties\": {\r",
+              "    \"success\": {\"type\":\"boolean\",\"const\":true},\r",
+              "    \"data\": {\r",
+              "        \"type\":\"object\",\r",
+              "        \"properties\":{\r",
+              "        \"response\": {\"type\":\"string\",\"const\":\"job application deleted\"},\r",
+              "        }\r",
+              "    }\r",
+              "}\r",
+              "}\r",
+              "\r",
+              "pm.test(\"job delete\",function(){\r",
+              "    pm.response.to.have.jsonSchema(jsonBody);\r",
+              "})"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseurl}}/api/v1/jobs/14",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "jobs",
+            "14"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "stats",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "const jsonBody = {\r",
+              "    \"type\": \"object\",\r",
+              "    \"properties\": {\r",
+              "        \"success\": { \"type\": \"boolean\", \"const\": true },\r",
+              "        \"data\": {\r",
+              "            \"type\": \"object\",\r",
+              "            \"properties\": {\r",
+              "                \"total\": { \"type\": \"number\" },\r",
+              "                \"status\": {\r",
+              "                    \"type\": \"object\",\r",
+              "                    \"properties\": {\r",
+              "                        \"APPLIED\": { \"type\": \"number\" },\r",
+              "                        \"FINAL_ROUND\": { \"type\": \"number\" },\r",
+              "                        \"GHOSTED\": { \"type\": \"number\" },\r",
+              "                        \"OFFER\": { \"type\": \"number\" },\r",
+              "                        \"PHONE_SCREEN\": { \"type\": \"number\" },\r",
+              "                        \"REJECTED\": { \"type\": \"number\" },\r",
+              "                        \"TECHNICAL\": { \"type\": \"number\" },\r",
+              "                    }, \"required\": [\"APPLIED\", \"FINAL_ROUND\", \"GHOSTED\", \"OFFER\", \"PHONE_SCREEN\", \"REJECTED\", \"TECHNICAL\"],\r",
+              "                },\r",
+              "                \"responseRate\": { \"type\": [\"number\", \"null\"] },\r",
+              "                \"offerRate\": { \"type\": [\"number\", \"null\"] },\r",
+              "                \"avgDaysToFirstResponse\": { \"type\": [\"number\", \"null\"] },\r",
+              "            }, \"required\": [\"total\", \"responseRate\", \"offerRate\", \"avgDaysToFirstResponse\"]\r",
+              "        }\r",
+              "    }, \"required\": [\"success\", \"data\"]\r",
+              "}\r",
+              "\r",
+              "\r",
+              "pm.test(\"stats data\", function () {\r",
+              "    pm.response.to.have.jsonSchema(jsonBody);\r",
+              "})\r",
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseurl}}/api/v1/jobs/stats",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "jobs",
+            "stats"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "dynamicRole",
+      "value": ""
+    }
+  ]
+}

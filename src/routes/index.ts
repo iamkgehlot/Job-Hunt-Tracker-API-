@@ -3,6 +3,6 @@ import { Router } from "express";
 
 const masterRouter = Router();
 
-masterRouter.use("/job", jobRouter);
+masterRouter.use("/jobs", jobRouter);
 
 export { masterRouter };
